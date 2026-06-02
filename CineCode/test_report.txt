@@ -1,0 +1,29 @@
+// --- BẮT ĐẦU CHẠY THỬ NGHIỆM ---
+
+// Trường hợp 1: Đặt ghế thành công (Ghế trống hợp lệ)
+console.log("Hành động: Đặt ghế (0, 0)");
+console.log("Kết quả :", bookSeat(0, 0)); 
+// Log: Đặt ghế thành công
+
+// Trường hợp 2: Đặt ghế thất bại do trùng (Ghế (1, 1) đã có sẵn số 1 từ đầu)
+console.log("Hành động: Đặt ghế (1, 1)");
+console.log("Kết quả :", bookSeat(1, 1)); 
+// Log: Ghế đã được đặt
+
+// Trường hợp 3: Tọa độ ma lanh - Số âm (Vượt biên dưới)
+console.log("Hành động: Đặt ghế (-1, 2)");
+console.log("Kết quả :", bookSeat(-1, 2)); 
+// Log: Ghế không hợp lệ
+
+// Trường hợp 4: Tọa độ ma lanh - Vượt quá số hàng (Vượt biên trên của Hàng)
+console.log("Hành động: Đặt ghế (3, 1)"); // Mảng chỉ có hàng 0, 1, 2
+console.log("Kết quả :", bookSeat(3, 1)); 
+// Log: Ghế không hợp lệ
+
+// Trường hợp 5: Tọa độ ma lanh - Vượt quá số cột (Vượt biên trên của Cột)
+console.log("Hành động: Đặt ghế (0, 5)"); // Hàng 0 chỉ có cột 0, 1, 2
+console.log("Kết quả :", bookSeat(0, 5)); 
+// Log: Ghế không hợp lệ
+
+// --- KIỂM TRA THÊM KHÁCH VÀO DANH SÁCH CHỜ ---
+addCustomerToWaitlist("LeVanC");
