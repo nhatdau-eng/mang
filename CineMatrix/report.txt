@@ -1,0 +1,8 @@
+| STT | Input (row, col) | Kết quả mong đợi    | Kết quả thực tế     | Pass/Fail |
+| --- | ---------------- | ------------------- | ------------------- | --------- |
+| 1   | (1, 2)           | Đặt thành công      | Đặt thành công      | Pass      |
+| 2   | (1, 2)           | Ghế đã có người đặt | Ghế đã có người đặt | Pass      |
+| 3   | (-1, 2)          | Ghế không tồn tại   | Ghế không tồn tại   | Pass      |
+| 4   | (2, -1)          | Ghế không tồn tại   | Ghế không tồn tại   | Pass      |
+| 5   | (10, 3)          | Ghế không tồn tại   | Ghế không tồn tại   | Pass      |
+| 6   | (3, 10)          | Ghế không tồn tại   | Ghế không tồn tại   | Pass      |
