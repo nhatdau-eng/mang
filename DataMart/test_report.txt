@@ -1,0 +1,6 @@
+| Test Case | Input                        | Kết quả mong đợi | Kết quả thực tế | Trạng thái |
+| --------- | ---------------------------- | ---------------- | --------------- | ---------- |
+| TC01      | Mảng chuẩn                   | 440              | 440             | PASS       |
+| TC02      | Mảng rỗng `[]`               | 0                | 0               | PASS       |
+| TC03      | Không có Delivered           | 0                | 0               | PASS       |
+| TC04      | Dữ liệu dị thường (0, số âm) | 65               | 65              | PASS       |

@@ -1,0 +1,1 @@
+Bạn là lập trình chuyên nghiệp hãy cho toi biết cách gộp 3 tác vụ filter,map,reduce này có hợp lí hay không 
