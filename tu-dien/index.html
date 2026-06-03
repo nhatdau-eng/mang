@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Từ điển</title>
+    </head>
+    <body>
+        <h2>Từ điển</h2>
+        <input type = "text"id="keyword"placeholder="nhập từ tiếng anh ">
+        <button onclick="translateWord()">Dịch</button>
+        <p id="result"></p>
+        <script>
+            let english = ["one","two","three","four"];
+            let vietnamese = ["một","hai","ba","bốn" ];
+            function translateWord()
+            {
+                let word = document.getElementById("keyword").value;
+                let position = english . indexOf(word);
+                if(position !== -1)
+            {
+                document.getElementById("result").innerHTML = vietnamese[position];
+            }
+            else
+            {
+                document .getElementById("result").innerHTML="Không tìm thấy ";
+            }
+            }
+        </script>
+    </body>
+</html>
