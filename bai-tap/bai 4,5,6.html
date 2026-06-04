@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4.5.6</title>
+</head>
+
+<body>
+
+    <script>
+        //Bài 4:Viết chương trình đếm số từ trong một chuỗi.
+      {
+       let str = "dan choi pho co";
+       let count = 0;
+       for(let i= 0 ; i <str.length; i++){
+         if(str[i] === " "){
+              count++;
+         }
+       }
+       console.log("so tu:",count +1 );
+  
+      }
+     
+    // Bài 5:Viết chương trình nhập vào 2 chuỗi, kiểm tra xem hai chuỗi có giống nhau không.
+   { let str1 = "Di an di "; 
+    let str2 = "Chua an duoc";
+    let isEqual = true;
+    if (str1.length !== str2.length){
+        isEqual = false;
+    }
+    else{
+        for(let i = 0 ;i<str.length ;i++){
+            if(str1[i] !== str2[i]){
+                isEqual = false; 
+                break;
+
+            }
+        }
+    }
+     console.log(isEqual?"Giong nhau":"khac nhau");
+    }
+
+//bai 6
+{
+let arr = ['a', '-', 'b', '-', 'c', '-', 'd'];
+for (let i = 0; i < arr.length; i++) {
+
+    if (arr[i] === '-') {
+        arr[i] = '_';
+    }
+}
+console.log(arr);
+}
+
+    </script>
+
+</body>
+
+</html>
